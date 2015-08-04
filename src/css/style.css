@@ -1,0 +1,10 @@
+body, p {
+  font-family: Calibri, Lucida Sans, Helvetica, Arial, sans-serif;
+  color: #363240;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+p, img {
+  margin: 26px 0;
+}
