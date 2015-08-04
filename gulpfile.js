@@ -3,6 +3,7 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	inlineCSS = require('gulp-inline-css');
 
+
 var options = {
 	email_source: 'src/index.html',
 	inline: {
@@ -19,6 +20,7 @@ var options = {
 	]
 }
 
+
 gulp.task('inline', function(){
 	gulp.src(options.email_source)
 		.pipe(inlineCSS(options.inline))
@@ -29,9 +31,6 @@ gulp.task('inline', function(){
 
 gulp.task('default', ['inline', 'watch'] );
 
-
-/* Watch Tasks */
-/* -------------------------------------- */
 
 gulp.task('watch', function() {
 	gulp.watch(options.watch_files, ['inline']);
